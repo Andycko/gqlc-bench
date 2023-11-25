@@ -16,7 +16,7 @@ The goal of this tool is to provide reliable and holistic data about cache perfo
 ![Current benchmark tool interface](./interface.png "Current benchmark tool interface") 
 Currently, this tool has been upgraded to use the newest versions of GraphQL clients. Below is a description of the clients used by the tool and example queries tested.
 ### Clients
-At the moment, this benchmark is set up to work with two GraphQL clients - Apollo Client 3.6, and Relay 14.0. These are one of the most popular GraphQL clients, however, the benchmark is not only limited to them. New clients can be added without bigger effort. 
+At the moment, this benchmark is set up to work with two GraphQL clients - Apollo Client 3.8, and Relay 16.0. These are one of the most popular GraphQL clients, however, the benchmark is not only limited to them. New clients can be added without bigger effort. 
 
 Furthermore, the Apollo client can be seen twice in the benchmark and that is because we are testing it with and without the Result cache enabled. Result cache is one of the two parts of Apollo clients' cache which is used to memoize query responses and then provides more than 10x faster response times when an identical query is read in the future. However, this is a niche use case and therefore, we have decided to look at the difference in performance in all the use cases.
 
